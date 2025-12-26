@@ -8,9 +8,11 @@
 
 | 工具 / Tool | 在线链接 / Link |
 |-------------|----------------|
-| M3U8 视频下载器 | <a href="https://htmlpreview.github.io/?https://github.com/heyuan110/ai-web-tools/blob/main/m3u8-downloader.html" target="_blank">打开 / Open</a> |
-| JSON 查看器 | <a href="https://htmlpreview.github.io/?https://github.com/heyuan110/ai-web-tools/blob/main/json-viewer.html" target="_blank">打开 / Open</a> |
-| SQLite 查看器 | <a href="https://htmlpreview.github.io/?https://github.com/heyuan110/ai-web-tools/blob/main/sqlite-viewer.html" target="_blank">打开 / Open</a> |
+| M3U8 视频下载器 | <a href="https://heyuan110.github.io/ai-web-tools/m3u8-downloader.html" target="_blank">打开 / Open</a> |
+| JSON 查看器 | <a href="https://heyuan110.github.io/ai-web-tools/json-viewer.html" target="_blank">打开 / Open</a> |
+| SQLite 查看器 | <a href="https://heyuan110.github.io/ai-web-tools/sqlite-viewer.html" target="_blank">打开 / Open</a> |
+
+> 💡 需要先启用 GitHub Pages：仓库 Settings → Pages → Source 选择 `main` 分支 → Save
 
 ---
 
