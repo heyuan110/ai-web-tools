@@ -4,6 +4,14 @@
 >
 > A collection of pure frontend utility tools. No installation required, just open in browser.
 
+## 🚀 在线使用 / Live Demo
+
+| 工具 / Tool | 在线链接 / Link |
+|-------------|----------------|
+| M3U8 视频下载器 | [打开 / Open](https://htmlpreview.github.io/?https://github.com/heyuan110/ai-web-tools/blob/main/m3u8-downloader.html) |
+| JSON 查看器 | [打开 / Open](https://htmlpreview.github.io/?https://github.com/heyuan110/ai-web-tools/blob/main/json-viewer.html) |
+| SQLite 查看器 | [打开 / Open](https://htmlpreview.github.io/?https://github.com/heyuan110/ai-web-tools/blob/main/sqlite-viewer.html) |
+
 ---
 
 ## 工具列表 / Tool List
