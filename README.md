@@ -28,6 +28,8 @@
 - 支持暂停/继续下载
 - 批量保存已完成的视频
 
+![M3U8 视频下载器](screenshots/m3u8-downloader.png)
+
 ### JSON 查看器
 美观的 JSON 数据可视化工具。
 
@@ -37,6 +39,8 @@
 - 关键字搜索
 - 支持粘贴或上传 JSON 文件
 
+![JSON 查看器](screenshots/json-viewer.png)
+
 ### SQLite 查看器
 在浏览器中直接查看和查询 SQLite 数据库。
 
@@ -45,6 +49,8 @@
 - 浏览所有表结构
 - 执行自定义 SQL 查询
 - 查询结果表格展示
+
+![SQLite 查看器](screenshots/sqlite-viewer.png)
 
 ---
 
@@ -60,6 +66,8 @@ Batch download M3U8 streaming videos and save locally.
 - Pause/Resume downloads
 - Batch save completed videos
 
+![M3U8 Video Downloader](screenshots/m3u8-downloader.png)
+
 ### JSON Viewer
 Beautiful JSON data visualization tool.
 
@@ -69,6 +77,8 @@ Beautiful JSON data visualization tool.
 - Keyword search
 - Paste or upload JSON files
 
+![JSON Viewer](screenshots/json-viewer.png)
+
 ### SQLite Viewer
 View and query SQLite databases directly in browser.
 
@@ -77,6 +87,8 @@ View and query SQLite databases directly in browser.
 - Browse all table structures
 - Execute custom SQL queries
 - Display results in table format
+
+![SQLite Viewer](screenshots/sqlite-viewer.png)
 
 ---
 
