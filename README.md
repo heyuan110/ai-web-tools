@@ -26,6 +26,8 @@
 
 ---
 
+工具合计预览: <a href="https://www.heyuan110.com/web-toolbox/" target="_blank">打开 / Open</a>
+
 ## 中文说明
 
 ### M3U8 视频下载器
