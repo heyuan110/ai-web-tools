@@ -1229,7 +1229,18 @@
         // 自动启动所有未加载的预览
         function autoStartPreviews() {
             tasks.forEach(task => {
-                // 如果这个任务还没有预览播放器，则启动预览
+                const previewEl = document.getElementById(`preview-${task.id}`);
+                if (!previewEl) return;
+
+                // 检查DOM中是否有视频元素
+                const hasVideo = previewEl.querySelector('video');
+
+                // 如果previewPlayers中有实例但DOM中没有视频，说明DOM被重建了，需要清理旧实例
+                if (previewPlayers[task.id] && !hasVideo) {
+                    cleanupPreview(task.id);
+                }
+
+                // 如果没有预览播放器，则启动预览
                 if (!previewPlayers[task.id]) {
                     startPreview(task.id);
                 }
