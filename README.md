@@ -1,4 +1,4 @@
-# AI Web Tools
+# Web Toolbox
 
 > 一套纯前端的实用工具集，无需安装，浏览器直接打开即可使用。
 >
@@ -8,9 +8,9 @@
 
 | 工具 / Tool | 在线链接 / Link |
 |-------------|----------------|
-| M3U8 视频下载器 | <a href="https://www.heyuan110.com/web-toolbox/m3u8-downloader.html" target="_blank">打开 / Open</a> |
-| JSON 查看器 | <a href="https://www.heyuan110.com/web-toolbox/json-viewer.html" target="_blank">打开 / Open</a> |
-| SQLite 查看器 | <a href="https://www.heyuan110.com/web-toolbox/sqlite-viewer.html" target="_blank">打开 / Open</a> |
+| M3U8 视频下载器 | <a href="https://heyuan110.github.io/web-toolbox/m3u8-downloader.html" target="_blank">打开 / Open</a> |
+| JSON 查看器 | <a href="https://heyuan110.github.io/web-toolbox/json-viewer.html" target="_blank">打开 / Open</a> |
+| SQLite 查看器 | <a href="https://heyuan110.github.io/web-toolbox/sqlite-viewer.html" target="_blank">打开 / Open</a> |
 
 > 💡 需要先启用 GitHub Pages：仓库 Settings → Pages → Source 选择 `main` 分支 → Save
 
@@ -25,8 +25,6 @@
 | `sqlite-viewer.html` | SQLite 查看器 | 浏览器内打开 SQLite 数据库，执行 SQL 查询 |
 
 ---
-
-工具合计预览: <a href="https://www.heyuan110.com/web-toolbox/" target="_blank">打开 / Open</a>
 
 ## 中文说明
 

@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Toolbox - 在线前端工具集 | 免费实用的浏览器工具箱</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Web Toolbox 是一套纯前端在线工具集，包含M3U8视频下载器、JSON查看器、SQLite浏览器、加解密工具、WebSocket测试、图片压缩、ICO制作、调色板等12+实用工具。无需安装，浏览器直接使用。">
+    <meta name="keywords" content="在线工具,前端工具,M3U8下载器,JSON格式化,SQLite查看器,加密解密,Base64编码,WebSocket测试,图片压缩,ICO制作,调色板,世界时钟,Whois查询,免费工具">
+    <meta name="author" content="heyuan110">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.heyuan110.com/web-toolbox/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.heyuan110.com/web-toolbox/">
+    <meta property="og:title" content="Web Toolbox - 在线前端工具集 | 免费实用的浏览器工具箱">
+    <meta property="og:description" content="纯前端在线工具集，包含M3U8下载、JSON格式化、SQLite浏览、加解密编码、图片压缩等12+实用工具。无需安装，浏览器直接使用。">
+    <meta property="og:image" content="https://www.heyuan110.com/web-toolbox/screenshots/og-image.png">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:site_name" content="Web Toolbox">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.heyuan110.com/web-toolbox/">
+    <meta name="twitter:title" content="Web Toolbox - 在线前端工具集">
+    <meta name="twitter:description" content="纯前端在线工具集，包含M3U8下载、JSON格式化、加解密编码、图片压缩等12+实用工具。">
+    <meta name="twitter:image" content="https://www.heyuan110.com/web-toolbox/screenshots/og-image.png">
+
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Web Toolbox",
+        "alternateName": "在线前端工具集",
+        "url": "https://www.heyuan110.com/web-toolbox/",
+        "description": "一套纯前端的实用工具集，包含M3U8视频下载、JSON格式化、SQLite浏览、加解密编码、图片压缩等12+在线工具",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "CNY"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "heyuan110",
+            "url": "https://github.com/heyuan110"
+        },
+        "hasPart": [
+            {"@type": "WebApplication", "name": "M3U8 视频下载器", "url": "https://www.heyuan110.com/web-toolbox/m3u8-downloader.html"},
+            {"@type": "WebApplication", "name": "JSON 查看器", "url": "https://www.heyuan110.com/web-toolbox/json-viewer.html"},
+            {"@type": "WebApplication", "name": "SQLite 查看器", "url": "https://www.heyuan110.com/web-toolbox/sqlite-viewer.html"},
+            {"@type": "WebApplication", "name": "加解密编码工具箱", "url": "https://www.heyuan110.com/web-toolbox/crypto-tools.html"},
+            {"@type": "WebApplication", "name": "WebSocket 测试工具", "url": "https://www.heyuan110.com/web-toolbox/websocket-tester.html"},
+            {"@type": "WebApplication", "name": "在线涂鸦画板", "url": "https://www.heyuan110.com/web-toolbox/paint-board.html"},
+            {"@type": "WebApplication", "name": "在线调色板", "url": "https://www.heyuan110.com/web-toolbox/color-palette.html"},
+            {"@type": "WebApplication", "name": "世界时间查询", "url": "https://www.heyuan110.com/web-toolbox/world-clock.html"},
+            {"@type": "WebApplication", "name": "Whois 域名查询", "url": "https://www.heyuan110.com/web-toolbox/whois-query.html"},
+            {"@type": "WebApplication", "name": "ICO 图标制作", "url": "https://www.heyuan110.com/web-toolbox/ico-maker.html"},
+            {"@type": "WebApplication", "name": "图片压缩工具", "url": "https://www.heyuan110.com/web-toolbox/image-compressor.html"},
+            {"@type": "WebApplication", "name": "万能计算器", "url": "https://www.heyuan110.com/web-toolbox/calculator.html"},
+            {"@type": "WebApplication", "name": "IP归属地查询", "url": "https://www.heyuan110.com/web-toolbox/ip-lookup.html"},
+            {"@type": "WebApplication", "name": "定时刷新网页", "url": "https://www.heyuan110.com/web-toolbox/page-refresher.html"},
+            {"@type": "WebApplication", "name": "正则表达式测试", "url": "https://www.heyuan110.com/web-toolbox/regex-tester.html"},
+            {"@type": "WebApplication", "name": "证件照裁剪 & 透明水印", "url": "https://www.heyuan110.com/web-toolbox/id-photo-tool.html"},
+            {"@type": "WebApplication", "name": "图片合并为PDF", "url": "https://www.heyuan110.com/web-toolbox/image-to-pdf.html"},
+            {"@type": "WebApplication", "name": "文件批量重命名", "url": "https://www.heyuan110.com/web-toolbox/file-renamer.html"},
+            {"@type": "WebApplication", "name": "手持弹幕", "url": "https://www.heyuan110.com/web-toolbox/handheld-danmaku.html"},
+            {"@type": "WebApplication", "name": "在线节拍器", "url": "https://www.heyuan110.com/web-toolbox/metronome.html"},
+            {"@type": "WebApplication", "name": "亲戚关系计算器", "url": "https://www.heyuan110.com/web-toolbox/relative-calculator.html"},
+            {"@type": "WebApplication", "name": "图片格式转换", "url": "https://www.heyuan110.com/web-toolbox/image-converter.html"},
+            {"@type": "WebApplication", "name": "音频剪辑", "url": "https://www.heyuan110.com/web-toolbox/audio-cutter.html"},
+            {"@type": "WebApplication", "name": "中文简繁体转换", "url": "https://www.heyuan110.com/web-toolbox/chinese-converter.html"},
+            {"@type": "WebApplication", "name": "Claude Code 历史记录", "url": "https://www.heyuan110.com/web-toolbox/claude-history-viewer.html"},
+            {"@type": "WebApplication", "name": "在线图片编辑器", "url": "https://www.heyuan110.com/web-toolbox/image-editor.html"},
+            {"@type": "WebApplication", "name": "时间戳转换工具", "url": "https://www.heyuan110.com/web-toolbox/timestamp-converter.html"}
+        ]
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #e4e4e7;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            background: linear-gradient(120deg, #00d4ff, #7c3aed, #f472b6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 16px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #a1a1aa;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(124, 58, 237, 0.2);
+            border: 1px solid rgba(124, 58, 237, 0.4);
+            color: #a78bfa;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-top: 20px;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 30px;
+        }
+
+        .tool-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(124, 58, 237, 0.5);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .tool-screenshot {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            object-position: top;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .tool-content {
+            padding: 24px;
+        }
+
+        .tool-icon {
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+
+        .tool-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 12px;
+        }
+
+        .tool-desc {
+            color: #a1a1aa;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        .tool-features {
+            list-style: none;
+            margin-bottom: 24px;
+        }
+
+        .tool-features li {
+            padding: 6px 0;
+            color: #d4d4d8;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tool-features li::before {
+            content: "✓";
+            color: #22c55e;
+            font-weight: bold;
+        }
+
+        .tool-btn {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #7c3aed, #6366f1);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .tool-btn:hover {
+            background: linear-gradient(135deg, #8b5cf6, #818cf8);
+            transform: scale(1.02);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #71717a;
+        }
+
+        footer a {
+            color: #a78bfa;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .tech-stack {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 16px;
+            flex-wrap: wrap;
+        }
+
+        .tech-tag {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            color: #a1a1aa;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 20px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛠️ Web Toolbox</h1>
+            <p class="subtitle">一套纯前端的实用工具集，无需安装，浏览器直接打开即可使用</p>
+            <span class="badge">100% 前端 · 无需后端 · 开箱即用</span>
+        </header>
+
+        <div class="tools-grid">
+            <!-- M3U8 下载器 -->
+            <div class="tool-card">
+                <img src="screenshots/m3u8-downloader.png" alt="M3U8 视频下载器截图" class="tool-screenshot">
+                <div class="tool-content">
+                    <div class="tool-icon">🎬</div>
+                    <h2 class="tool-title">M3U8 视频下载器</h2>
+                    <p class="tool-desc">批量下载 M3U8 流媒体视频并保存为本地 MP4 文件</p>
+                    <ul class="tool-features">
+                        <li>单条或批量导入 M3U8 链接</li>
+                        <li>实时视频预览（自动播放）</li>
+                        <li>下载进度可视化</li>
+                        <li>支持暂停/继续下载</li>
+                    </ul>
+                    <a href="m3u8-downloader.html" class="tool-btn">打开工具 →</a>
+                </div>
+            </div>
+
+            <!-- JSON 查看器 -->
+            <div class="tool-card">
+                <img src="screenshots/json-viewer.png" alt="JSON 查看器截图" class="tool-screenshot">
+                <div class="tool-content">
+                    <div class="tool-icon">📋</div>
+                    <h2 class="tool-title">JSON 查看器</h2>
+                    <p class="tool-desc">美观的 JSON 数据可视化与格式化工具</p>
+                    <ul class="tool-features">
+                        <li>语法高亮显示</li>
+                        <li>节点折叠/展开</li>
+                        <li>关键字搜索过滤</li>
+                        <li>支持粘贴或上传文件</li>
+                    </ul>
+                    <a href="json-viewer.html" class="tool-btn">打开工具 →</a>
+                </div>
+            </div>
+
+            <!-- SQLite 查看器 -->
+            <div class="tool-card">
+                <img src="screenshots/sqlite-viewer.png" alt="SQLite 查看器截图" class="tool-screenshot">
+                <div class="tool-content">
+                    <div class="tool-icon">🗄️</div>
+                    <h2 class="tool-title">SQLite 查看器</h2>
+                    <p class="tool-desc">在浏览器中直接查看和查询 SQLite 数据库</p>
+                    <ul class="tool-features">
+                        <li>拖拽上传 .db / .sqlite 文件</li>
+                        <li>浏览所有表结构</li>
+                        <li>执行自定义 SQL 查询</li>
+                        <li>查询结果表格展示</li>
+                    </ul>
+                    <a href="sqlite-viewer.html" class="tool-btn">打开工具 →</a>
+                </div>
+            </div>
+
+            <!-- OctoVideoSniffer 八爪鱼 -->
+            <div class="tool-card">
+                <img src="screenshots/OctoVideoSniffer.png" alt="OctoVideoSniffer 截图" class="tool-screenshot">
+                <div class="tool-content">
+                    <div class="tool-icon">🐙</div>
+                    <h2 class="tool-title">OctoVideoSniffer 八爪鱼</h2>
+                    <p class="tool-desc">Chrome/Edge 浏览器扩展，自动检测并提取网页中的视频链接</p>
+                    <ul class="tool-features">
+                        <li>智能识别网页视频资源链接</li>
+                        <li>支持 .m3u8 / .mp4 / .ts 等格式</li>
+                        <li>简洁的界面，一键复制链接</li>
+                        <li>轻量快速，开箱即用</li>
+                    </ul>
+                    <a href="https://github.com/heyuan110/OctoVideoSniffer" target="_blank" class="tool-btn">查看项目 →</a>
+                </div>
+            </div>
+
+            <!-- 加解密编码工具箱 -->
+            <div class="tool-card">
+                <img src="screenshots/crypto-tools.png" alt="加解密编码工具箱截图" class="tool-screenshot">
+                <div class="tool-content">
+                    <div class="tool-icon">🔐</div>
+                    <h2 class="tool-title">加解密编码工具箱</h2>
+                    <p class="tool-desc">集成 20+ 种加密解密和编码转换工具的综合工具箱</p>
+                    <ul class="tool-features">
+                        <li>MD5/SHA/AES/DES 等加密算法</li>
+                        <li>Base64/URL/Unicode 编码转换</li>
+                        <li>摩尔斯电码/条形码生成器</li>
+                        <li>密码生成/UUID/IP 转换等</li>
+                    </ul>
+                    <a href="crypto-tools.html" class="tool-btn">打开工具 →</a>
+                </div>
+            </div>
+
+            <!-- WebSocket 测试工具 -->
+            <div class="tool-card">
+                <img src="screenshots/websocket-tester.png" alt="WebSocket 测试工具截图" class="tool-screenshot">
+                <div class="tool-content">
+                    <div class="tool-icon">🔌</div>
+                    <h2 class="tool-title">WebSocket 测试工具</h2>
+                    <p class="tool-desc">基于 HTML5 WebSocket 的在线调试工具，支持内网和外网</p>
+                    <ul class="tool-features">
+                        <li>支持 ws:// 和 wss:// 协议</li>
+                        <li>实时消息收发与日志显示</li>
+                        <li>连接状态监控与统计</li>
+                        <li>支持 JSON 格式化发送</li>
+                    </ul>
+                    <a href="websocket-tester.html" class="tool-btn">打开工具 →</a>
+                </div>
+            </div>
+
+            <!-- 在线涂鸦画板 -->
+            <div class="tool-card">
+                <img src="screenshots/paint-board.png" alt="在线涂鸦画板截图" class="tool-screenshot">
+                <div class="tool-content">
+                    <div class="tool-icon">🎨</div>
+                    <h2 class="tool-title">在线涂鸦画板</h2>
+                    <p class="tool-desc">功能丰富的在线画板，尽情发挥您的绘画艺术天赋</p>
+                    <ul class="tool-features">
+                        <li>画笔/橡皮/填充/形状工具</li>
+                        <li>自定义颜色和透明度</li>
+                        <li>撤销/重做/自定义画布</li>
+                        <li>保存为 PNG/JPG 格式</li>
+                    </ul>
+                    <a href="paint-board.html" class="tool-btn">打开工具 →</a>
+                </div>
+            </div>
+
+            <!-- 在线调色板 -->
+            <div class="tool-card">
+                <img src="screenshots/color-palette.png" alt="在线调色板截图" class="tool-screenshot">
+                <div class="tool-content">
+                    <div class="tool-icon">🎨</div>
+                    <h2 class="tool-title">在线调色板</h2>
+                    <p class="tool-desc">快速查找颜色编码，支持多种颜色格式转换</p>
+                    <ul class="tool-features">
+                        <li>HEX/RGB/HSL/CMYK 多格式</li>
+                        <li>互补色/相似色/三等分色</li>
+                        <li>收藏常用颜色</li>
+                        <li>一键复制颜色代码</li>
+                    </ul>
+                    <a href="color-palette.html" class="tool-btn">打开工具 →</a>
+                </div>
+            </div>
+
+            <!-- 世界时间查询 -->
+            <div class="tool-card">
+                <img src="screenshots/world-clock.png" alt="世界时间查询截图" class="tool-screenshot">
+                <div class="tool-content">
+                    <div class="tool-icon">🌍</div>
+                    <h2 class="tool-title">世界时间查询</h2>
+                    <p class="tool-desc">实时查看全球各地时间，支持时差计算</p>
+                    <ul class="tool-features">
+                        <li>全球 25+ 主要城市时间</li>
+                        <li>实时更新，日夜指示</li>
+                        <li>自动识别当前时区</li>
+                        <li>时差计算与城市搜索</li>
+                    </ul>
+                    <a href="world-clock.html" class="tool-btn">打开工具 →</a>
+                </div>
+            </div>
+
+            <!-- Whois 域名查询 -->
+            <div class="tool-card">
+                <img src="screenshots/whois-query.png" alt="Whois 域名查询截图" class="tool-screenshot">
+                <div class="tool-content">
+                    <div class="tool-icon">🔍</div>
+                    <h2 class="tool-title">Whois 域名查询</h2>
+                    <p class="tool-desc">查询域名注册信息、所有者、注册商、有效期等详细信息</p>
+                    <ul class="tool-features">
+                        <li>域名注册商/所有者信息</li>
+                        <li>注册/到期日期与域名年龄</li>
+                        <li>DNS 名称服务器列表</li>
+                        <li>域名状态与原始数据</li>
+                    </ul>
+                    <a href="whois-query.html" class="tool-btn">打开工具 →</a>
+                </div>
+            </div>
+
+            <!-- ICO 图标制作 -->
+            <div class="tool-card">
+                <img src="screenshots/ico-maker.png" alt="ICO 图标制作截图" class="tool-screenshot">
+                <div class="tool-content">
+                    <div class="tool-icon">🎨</div>
+                    <h2 class="tool-title">ICO 图标制作</h2>
+                    <p class="tool-desc">将 PNG、JPG、GIF 图片转换为 ICO 图标文件</p>
+                    <ul class="tool-features">
+                        <li>支持 PNG/JPG/GIF 格式转换</li>
+                        <li>裁剪功能，多尺寸选择</li>
+                        <li>实时预览各尺寸效果</li>
+                        <li>一键生成并下载 ICO</li>
+                    </ul>
+                    <a href="ico-maker.html" class="tool-btn">打开工具 →</a>
+                </div>
+            </div>
+
+            <!-- 图片压缩工具 -->
+            <div class="tool-card">
+                <img src="screenshots/image-compressor.png" alt="图片压缩工具截图" class="tool-screenshot">
+                <div class="tool-content">
+                    <div class="tool-icon">📦</div>
+                    <h2 class="tool-title">图片压缩工具</h2>
+                    <p class="tool-desc">批量压缩图片，保持清晰度的同时大幅减小文件体积</p>
+                    <ul class="tool-features">
+                        <li>支持批量/文件夹导入</li>
+                        <li>可调节压缩质量和尺寸</li>
+                        <li>支持 JPG/PNG/WebP 输出</li>
+                        <li>一键打包下载全部</li>
+                    </ul>
+                    <a href="image-compressor.html" class="tool-btn">打开工具 →</a>
+                </div>
+            </div>
+
+            <!-- 万能计算器 -->
+            <div class="tool-card">
+                <img src="screenshots/calculator.png" alt="万能计算器截图" class="tool-screenshot">
+                <div class="tool-content">
+                    <div class="tool-icon">🧮</div>
+                    <h2 class="tool-title">万能计算器</h2>
+                    <p class="tool-desc">集成科学计算器、利率计算器、子网掩码及16种单位换算工具</p>
+                    <ul class="tool-features">
+                        <li>科学计算器（三角/对数/阶乘）</li>
+                        <li>贷款利率计算器</li>
+                        <li>子网掩码/IP 计算器</li>
+                        <li>长度/面积/体积/温度等换算</li>
+                    </ul>
+                    <a href="calculator.html" class="tool-btn">打开工具 →</a>
+                </div>
+            </div>
+
+            <!-- IP归属地查询 -->
+            <div class="tool-card">
+                <img src="screenshots/ip-lookup.png" alt="IP归属地查询截图" class="tool-screenshot">
+                <div class="tool-content">
+                    <div class="tool-icon">🌍</div>
+                    <h2 class="tool-title">IP归属地查询</h2>
+                    <p class="tool-desc">查询IP地址或域名的地理位置、运营商等信息</p>
+                    <ul class="tool-features">
+                        <li>IP/域名地理位置查询</li>
+                        <li>运营商、IP段范围信息</li>
+                        <li>显示本机IP及归属地</li>
+                        <li>浏览器、系统信息检测</li>
+                    </ul>
+                    <a href="ip-lookup.html" class="tool-btn">打开工具 →</a>
+                </div>
+            </div>
+
+            <!-- 定时刷新网页 -->
+            <div class="tool-card">
+                <img src="screenshots/page-refresher.png" alt="定时刷新网页截图" class="tool-screenshot">
+                <div class="tool-content">
+                    <div class="tool-icon">🔄</div>
+                    <h2 class="tool-title">定时刷新网页</h2>
+                    <p class="tool-desc">在线定时自动刷新网页，可用于压力测试和增加请求量</p>
+                    <ul class="tool-features">
+                        <li>自定义刷新间隔时间</li>
+                        <li>刷新次数限制设置</li>
+                        <li>实时刷新日志记录</li>
+                        <li>内嵌预览目标页面</li>
+                    </ul>
+                    <a href="page-refresher.html" class="tool-btn">打开工具 →</a>
+                </div>
+            </div>
+
+            <!-- 正则表达式测试 -->
+            <div class="tool-card">
+                <img src="screenshots/regex-tester.png" alt="正则表达式测试截图" class="tool-screenshot">
+                <div class="tool-content">
+                    <div class="tool-icon">🔍</div>
+                    <h2 class="tool-title">正则表达式测试</h2>
+                    <p class="tool-desc">在线正则表达式验证、匹配、提取工具，支持多语言代码生成</p>
+                    <ul class="tool-features">
+                        <li>实时正则匹配高亮显示</li>
+                        <li>常用正则表达式模板</li>
+                        <li>7种编程语言代码生成</li>
+                        <li>元字符和语法参考文档</li>
+                    </ul>
+                    <a href="regex-tester.html" class="tool-btn">打开工具 →</a>
+                </div>
+            </div>
+
+            <!-- 证件照裁剪 & 透明水印 -->
+            <div class="tool-card">
+                <img src="screenshots/id-photo-tool.png" alt="证件照裁剪 & 透明水印截图" class="tool-screenshot">
+                <div class="tool-content">
+                    <div class="tool-icon">📷</div>
+                    <h2 class="tool-title">证件照裁剪 & 透明水印</h2>
+                    <p class="tool-desc">本地离线处理证件照：裁剪、改尺寸、压缩、添加透明文字水印</p>
+                    <ul class="tool-features">
+                        <li>1寸/2寸/护照照等预设尺寸</li>
+                        <li>自由裁剪与尺寸调整</li>
+                        <li>透明文字水印（单点/平铺）</li>
+                        <li>100%离线处理保护隐私</li>
+                    </ul>
+                    <a href="id-photo-tool.html" class="tool-btn">打开工具 →</a>
+                </div>
+            </div>
+
+            <!-- 图片合并为PDF -->
+            <div class="tool-card">
+                <img src="screenshots/image-to-pdf.png" alt="图片合并为PDF截图" class="tool-screenshot">
+                <div class="tool-content">
+                    <div class="tool-icon">📄</div>
+                    <h2 class="tool-title">图片合并为PDF</h2>
+                    <p class="tool-desc">多图拖拽排序、截图粘贴、手机扫码上传，一键生成高质量PDF</p>
+                    <ul class="tool-features">
+                        <li>多种上传方式（拖拽/粘贴/扫码）</li>
+                        <li>拖拽调整图片顺序</li>
+                        <li>自定义页面尺寸和质量</li>
+                        <li>一键生成PDF并下载</li>
+                    </ul>
+                    <a href="image-to-pdf.html" class="tool-btn">打开工具 →</a>
+                </div>
+            </div>
+
+            <!-- 文件批量重命名 -->
+            <div class="tool-card">
+                <img src="screenshots/file-renamer.png" alt="文件批量重命名截图" class="tool-screenshot">
+                <div class="tool-content">
+                    <div class="tool-icon">📝</div>
+                    <h2 class="tool-title">文件批量重命名</h2>
+                    <p class="tool-desc">支持顺序编号、查找替换、添加前后缀等多种模式，完全本地处理</p>
+                    <ul class="tool-features">
+                        <li>顺序编号自动补零</li>
+                        <li>查找替换/正则替换</li>
+                        <li>拖拽排序调整顺序</li>
+                        <li>打包下载/逐个下载</li>
+                    </ul>
+                    <a href="file-renamer.html" class="tool-btn">打开工具 →</a>
+                </div>
+            </div>
+
+            <!-- 手持弹幕 -->
+            <div class="tool-card">
+                <img src="screenshots/handheld-danmaku.png" alt="手持弹幕截图" class="tool-screenshot">
+                <div class="tool-content">
+                    <div class="tool-icon">📢</div>
+                    <h2 class="tool-title">手持弹幕</h2>
+                    <p class="tool-desc">演唱会应援、活动表白、聚会互动必备的LED滚动字幕生成器</p>
+                    <ul class="tool-features">
+                        <li>自定义弹幕内容和颜色</li>
+                        <li>可调节滚动速度和字体大小</li>
+                        <li>多种预设配色方案</li>
+                        <li>双击屏幕快速退出</li>
+                    </ul>
+                    <a href="handheld-danmaku.html" class="tool-btn">打开工具 →</a>
+                </div>
+            </div>
+
+            <!-- 在线节拍器 -->
+            <div class="tool-card">
+                <img src="screenshots/metronome.png" alt="在线节拍器截图" class="tool-screenshot">
+                <div class="tool-content">
+                    <div class="tool-icon">🎵</div>
+                    <h2 class="tool-title">在线节拍器</h2>
+                    <p class="tool-desc">音乐练习必备工具，帮助你保持精准节奏，支持多种拍号和音色</p>
+                    <ul class="tool-features">
+                        <li>40-220 BPM 速度调节</li>
+                        <li>支持 2/4、3/4、4/4、6/8 拍号</li>
+                        <li>电子音/钢琴音色可选</li>
+                        <li>可自定义强弱拍</li>
+                    </ul>
+                    <a href="metronome.html" class="tool-btn">打开工具 →</a>
+                </div>
+            </div>
+
+            <!-- 亲戚关系计算器 -->
+            <div class="tool-card">
+                <img src="screenshots/relative-calculator.png" alt="亲戚关系计算器截图" class="tool-screenshot">
+                <div class="tool-content">
+                    <div class="tool-icon">👨‍👩‍👧‍👦</div>
+                    <h2 class="tool-title">亲戚关系计算器</h2>
+                    <p class="tool-desc">快速查询中国家庭亲戚称呼，再也不怕叫错七大姑八大姨</p>
+                    <ul class="tool-features">
+                        <li>支持复杂亲戚关系链计算</li>
+                        <li>覆盖父系母系血亲姻亲</li>
+                        <li>提供多种称呼别名</li>
+                        <li>快捷按钮一键选择</li>
+                    </ul>
+                    <a href="relative-calculator.html" class="tool-btn">打开工具 →</a>
+                </div>
+            </div>
+
+            <!-- 图片格式转换 -->
+            <div class="tool-card">
+                <img src="screenshots/image-converter.png" alt="图片格式转换截图" class="tool-screenshot">
+                <div class="tool-content">
+                    <div class="tool-icon">🔄</div>
+                    <h2 class="tool-title">图片格式转换</h2>
+                    <p class="tool-desc">在线图片格式批量转换，支持多种格式互转，本地处理保护隐私</p>
+                    <ul class="tool-features">
+                        <li>支持 PNG/JPEG/WebP/GIF/BMP/ICO</li>
+                        <li>批量转换一键打包下载</li>
+                        <li>可调节输出质量</li>
+                        <li>拖拽上传即用</li>
+                    </ul>
+                    <a href="image-converter.html" class="tool-btn">打开工具 →</a>
+                </div>
+            </div>
+
+            <!-- 音频剪辑 -->
+            <div class="tool-card">
+                <img src="screenshots/audio-cutter.jpg" alt="音频剪辑截图" class="tool-screenshot">
+                <div class="tool-content">
+                    <div class="tool-icon">🎧</div>
+                    <h2 class="tool-title">音频剪辑</h2>
+                    <p class="tool-desc">在线音频剪辑工具，可视化波形操作，精准截取音频片段</p>
+                    <ul class="tool-features">
+                        <li>可视化波形展示</li>
+                        <li>支持 MP3/WAV/M4A/FLAC/AAC 格式</li>
+                        <li>拖拽选择剪辑区间</li>
+                        <li>快捷键操作提升效率</li>
+                    </ul>
+                    <a href="audio-cutter.html" class="tool-btn">打开工具 →</a>
+                </div>
+            </div>
+
+            <!-- 中文简繁体转换 -->
+            <div class="tool-card">
+                <img src="screenshots/chinese-converter.jpg" alt="中文简繁体转换截图" class="tool-screenshot">
+                <div class="tool-content">
+                    <div class="tool-icon">繁简</div>
+                    <h2 class="tool-title">中文简繁体转换</h2>
+                    <p class="tool-desc">简繁体互转工具，支持大陆简体、港澳繁体、台湾正体、马新简体</p>
+                    <ul class="tool-features">
+                        <li>简繁体单字互转</li>
+                        <li>智能识别地区习惯用语</li>
+                        <li>支持实时转换模式</li>
+                        <li>一键复制/下载结果</li>
+                    </ul>
+                    <a href="chinese-converter.html" class="tool-btn">打开工具 →</a>
+                </div>
+            </div>
+
+            <!-- Claude Code 历史记录 -->
+            <div class="tool-card">
+                <img src="screenshots/claude-history-viewer.png" alt="Claude Code 历史记录截图" class="tool-screenshot">
+                <div class="tool-content">
+                    <div class="tool-icon">💬</div>
+                    <h2 class="tool-title">Claude Code 历史记录</h2>
+                    <p class="tool-desc">查看和搜索 Claude Code 的历史对话记录，美观易用的可视化界面</p>
+                    <ul class="tool-features">
+                        <li>支持 JSONL 格式导入</li>
+                        <li>按项目/时间分组查看</li>
+                        <li>全文搜索与内容筛选</li>
+                        <li>导出为 Markdown/JSON/文本</li>
+                    </ul>
+                    <a href="claude-history-viewer.html" class="tool-btn">打开工具 →</a>
+                </div>
+            </div>
+
+            <!-- 在线图片编辑器 -->
+            <div class="tool-card">
+                <img src="screenshots/image-editor.png" alt="在线图片编辑器截图" class="tool-screenshot">
+                <div class="tool-content">
+                    <div class="tool-icon">🖼️</div>
+                    <h2 class="tool-title">在线图片编辑器</h2>
+                    <p class="tool-desc">功能强大的在线P图工具，支持裁切、滤镜、调色、标注、抠图等</p>
+                    <ul class="tool-features">
+                        <li>裁切/翻转/旋转变换</li>
+                        <li>12种滤镜（灰度/浮雕/像素化等）</li>
+                        <li>调色：亮度/对比度/饱和度/色调</li>
+                        <li>标注绘图与纯色抠图</li>
+                    </ul>
+                    <a href="image-editor.html" class="tool-btn">打开工具 →</a>
+                </div>
+            </div>
+
+            <!-- 时间戳转换工具 -->
+            <div class="tool-card">
+                <img src="screenshots/timestamp-converter.png" alt="时间戳转换工具截图" class="tool-screenshot">
+                <div class="tool-content">
+                    <div class="tool-icon">🕐</div>
+                    <h2 class="tool-title">时间戳转换工具</h2>
+                    <p class="tool-desc">Unix时间戳与日期时间互转，支持多时区对照，提供各语言代码示例</p>
+                    <ul class="tool-features">
+                        <li>时间戳/日期时间互转</li>
+                        <li>12个时区实时对照</li>
+                        <li>18种编程语言代码示例</li>
+                        <li>夏令时说明与常见时间戳</li>
+                    </ul>
+                    <a href="timestamp-converter.html" class="tool-btn">打开工具 →</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Made with ❤️ by <a href="https://github.com/heyuan110" target="_blank">@heyuan110</a></p>
+            <div class="tech-stack">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HLS.js</span>
+                <span class="tech-tag">sql.js</span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
