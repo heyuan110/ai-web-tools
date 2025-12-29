@@ -10,10 +10,22 @@
 |:---:|:---:|:---:|
 | ![M3U8下载器](screenshots/m3u8-downloader.png) | ![JSON查看器](screenshots/json-viewer.png) | ![SQLite查看器](screenshots/sqlite-viewer.png) |
 | M3U8 视频下载器 | JSON 查看器 | SQLite 查看器 |
-| ![加解密工具](screenshots/crypto-tools.png) | ![图片编辑器](screenshots/image-editor.png) | ![调色板](screenshots/color-palette.png) |
-| 加解密编码工具箱 | 在线图片编辑器 | 在线调色板 |
-| ![正则测试](screenshots/regex-tester.png) | ![时间戳转换](screenshots/timestamp-converter.png) | ![音频剪辑](screenshots/audio-cutter.jpg) |
-| 正则表达式测试 | 时间戳转换工具 | 音频剪辑 |
+| ![加解密工具](screenshots/crypto-tools.png) | ![WebSocket测试](screenshots/websocket-tester.png) | ![正则测试](screenshots/regex-tester.png) |
+| 加解密编码工具箱 | WebSocket 测试工具 | 正则表达式测试 |
+| ![时间戳转换](screenshots/timestamp-converter.png) | ![音频剪辑](screenshots/audio-cutter.jpg) | ![图片编辑器](screenshots/image-editor.png) |
+| 时间戳转换工具 | 音频剪辑 | 在线图片编辑器 |
+| ![涂鸦画板](screenshots/paint-board.png) | ![调色板](screenshots/color-palette.png) | ![ICO制作](screenshots/ico-maker.png) |
+| 在线涂鸦画板 | 在线调色板 | ICO 图标制作 |
+| ![图片压缩](screenshots/image-compressor.png) | ![图片格式转换](screenshots/image-converter.png) | ![证件照裁剪](screenshots/id-photo-tool.png) |
+| 图片压缩工具 | 图片格式转换 | 证件照裁剪 |
+| ![图片转PDF](screenshots/image-to-pdf.png) | ![世界时间](screenshots/world-clock.png) | ![Whois查询](screenshots/whois-query.png) |
+| 图片合并为PDF | 世界时间查询 | Whois 域名查询 |
+| ![IP查询](screenshots/ip-lookup.png) | ![定时刷新](screenshots/page-refresher.png) | ![万能计算器](screenshots/calculator.png) |
+| IP 地址归属地查询 | 定时刷新网页 | 万能计算器 |
+| ![亲戚计算器](screenshots/relative-calculator.png) | ![文件重命名](screenshots/file-renamer.png) | ![简繁转换](screenshots/chinese-converter.jpg) |
+| 亲戚关系计算器 | 文件批量重命名 | 中文简繁体转换 |
+| ![手持弹幕](screenshots/handheld-danmaku.png) | ![节拍器](screenshots/metronome.png) | ![Claude历史](screenshots/claude-history-viewer.png) |
+| 手持弹幕 | 在线节拍器 | Claude Code 历史记录查看器 |
 
 ## 🚀 在线使用 / Live Demo
 
