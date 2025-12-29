@@ -4,6 +4,17 @@
 >
 > A collection of pure frontend utility tools. No installation required, just open in browser.
 
+## 📸 预览图 / Screenshots
+
+| | | |
+|:---:|:---:|:---:|
+| ![M3U8下载器](screenshots/m3u8-downloader.png) | ![JSON查看器](screenshots/json-viewer.png) | ![SQLite查看器](screenshots/sqlite-viewer.png) |
+| M3U8 视频下载器 | JSON 查看器 | SQLite 查看器 |
+| ![加解密工具](screenshots/crypto-tools.png) | ![图片编辑器](screenshots/image-editor.png) | ![调色板](screenshots/color-palette.png) |
+| 加解密编码工具箱 | 在线图片编辑器 | 在线调色板 |
+| ![正则测试](screenshots/regex-tester.png) | ![时间戳转换](screenshots/timestamp-converter.png) | ![音频剪辑](screenshots/audio-cutter.jpg) |
+| 正则表达式测试 | 时间戳转换工具 | 音频剪辑 |
+
 ## 🚀 在线使用 / Live Demo
 
 | 工具 / Tool | 在线链接 / Link |
